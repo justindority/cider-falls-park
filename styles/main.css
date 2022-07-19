@@ -1,0 +1,47 @@
+img {
+    height: 200px;
+    margin-top: .5em;
+}
+
+.destinations {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.destination {
+    margin: 1em;
+    padding: 1em;
+    background-color: lightcoral
+}
+
+.guests {
+    width: 20%;
+    background-color: rgb(4, 135, 85);
+    float: right;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.guests h3 {
+    margin-top: 0em;
+}
+
+body {
+    background-color: rgb(15, 135, 176);
+}
+
+.header {
+    background-color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.footer div {
+    margin: 1em;
+}

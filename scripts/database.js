@@ -144,75 +144,75 @@ const database = {
     destinationActivites:
     [
         {
-            locationId: 1,
+            destinationId: 1,
             activityId: 1
         },
         {
-            locationId: 1,
+            destinationId: 1,
             activityId: 2
         },
         {
-            locationId: 1,
+            destinationId: 1,
             activityId: 3
         },
         {
-            locationId: 2,
+            destinationId: 2,
             activityId: 4
         },
         {
-            locationId: 2,
+            destinationId: 2,
             activityId: 5
         },
         {
-            locationId: 2,
+            destinationId: 2,
             activityId: 6
         },
         {
-            locationId: 3,
+            destinationId: 3,
             activityId: 7
         },
         {
-            locationId: 3,
+            destinationId: 3,
             activityId: 8
         },
         {
-            locationId: 3,
+            destinationId: 3,
             activityId: 9
         },
         {
-            locationId: 3,
+            destinationId: 3,
             activityId: 5
         },
         {
-            locationId: 4,
+            destinationId: 4,
             activityId: 3
         },
         {
-            locationId: 4,
+            destinationId: 4,
             activityId: 4
         },
         {
-            locationId: 5,
+            destinationId: 5,
             activityId: 9
         },
         {
-            locationId: 5,
+            destinationId: 5,
             activityId: 7
         },
         {
-            locationId: 5,
+            destinationId: 5,
             activityId: 8
         },
         {
-            locationId: 6,
+            destinationId: 6,
             activityId: 4
         },
         {
-            locationId: 6,
+            destinationId: 6,
             activityId: 5
         },
         {
-            locationId: 6,
+            destinationId: 6,
             activityId: 10
         }
     ]

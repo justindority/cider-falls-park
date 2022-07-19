@@ -9,14 +9,14 @@
     //add closing tags to html string
     //return html string
 
-import { getDestinations } from "./database.js";
+import { getDestinations, getGuests } from "./database.js";
 
 const destinations = getDestinations()
 export const destinationsHTML = () => {
     let html = `<section class="destinations">`
     for(const destination of destinations){
         html += `<div class="destination">
-        <div class="detail">${destination.name}</div>
+        <div class="detail" id="title--${destination.id}">${destination.name}</div>
         <div class="detail"><img src=${destination.image}></div>`
         if(destination.features){
             html += `<div class=detail>Features: ${destination.features}</div>`
@@ -25,3 +25,27 @@ export const destinationsHTML = () => {
     }
     return html
 }
+
+
+document.addEventListener(
+    "click",
+    (clickEvent) => {
+        const itemClicked = clickEvent.target
+        if (itemClicked.id.startsWith("title")) {
+            const [,destinationId] = itemClicked.id.split("--")
+
+            let guests = getGuests()
+            let count = 0
+            for (const guest of guests) {
+                if (guest.location === parseInt(destinationId)) {
+                    count++
+                }
+            }
+            if(count === 1){
+                window.alert(`There is 1 guest in this area.`)
+            } else {
+                window.alert(`There are ${count} guests in this area.`)
+            }
+        }
+    }
+)
